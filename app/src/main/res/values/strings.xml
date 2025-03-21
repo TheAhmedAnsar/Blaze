@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Blaze</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1541492480072957/2377135029</string>
+
+
+
+    <!--    <string name="name">ListView</string>-->
+    <string-array name="array_technology">
+        <item>Android</item>
+        <item>Java</item>
+        <item>Php</item>
+        <item>Hadoop</item>
+        <item>Sap</item>
+        <item>Python</item>
+        <item>Ajax</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Rails</item>
+        <item>.Net</item>
+        <item>Perl</item>
+    </string-array>
+
+    <item name="source" type="id" />
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>
+

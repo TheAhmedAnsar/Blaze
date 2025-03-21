@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/linear_linear_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:visibility="invisible"-->
+<!--            android:id="@+id/animationView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:lottie_rawRes="@raw/loading"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"/>-->
+
+
+<!--        &lt;!&ndash;        <com.google.android.material.progressindicator.CircularProgressIndicator&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/progresssss"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:visibility="invisible"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:progressTint="@color/black"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:indeterminate="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;            />&ndash;&gt;-->
+
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/relativeLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?android:actionBarSize"-->
+<!--                android:layout_margin="10dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                >-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="7dp"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:layout_marginEnd="7dp"-->
+<!--                    android:layout_marginBottom="7dp"-->
+<!--                    app:tint="@color/black"-->
+<!--                    android:src="@drawable/ic_baseline_arrow_back_24" />-->
+
+
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginStart="45dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Edit Profile"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp" />-->
+
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--            </RelativeLayout>-->
+
+
+<!--            <ScrollView-->
+<!--                android:id="@+id/scrollview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="60dp"-->
+<!--                android:layout_marginBottom="130dp"-->
+
+<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/save_done">-->
+
+
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="1dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                         />
+
+
+                    <!--                    <com.google.android.material.imageview.ShapeableImageView-->
+                    <!--                        android:layout_width="110dp"-->
+                    <!--                        android:layout_height="110dp"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:scaleType="fitXY"-->
+                    <!--                        android:src="@drawable/johnnynew" />-->
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <TextView
+                    android:id="@+id/change_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Change Photo"
+                    android:textColor="#1B8BF2"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/linearLayoutCompat14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:elevation="5dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat13">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            app:cardPreventCornerOverlap="true"
+
+                            app:cardUseCompatPadding="true">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Name"
+                                app:shapeAppearance="@style/Rounded">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Remo"
+                                    android:textColor="@color/black"
+                                    android:textSize="19sp" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Number"
+                                android:enabled="false"
+                                app:shapeAppearance="@style/Rounded">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/my_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:editable="false"
+                                    android:text="+91 7977334091"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="6dp"-->
+<!--                            app:cardPreventCornerOverlap="true"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:hint="College"-->
+<!--                                app:shapeAppearance="@style/Rounded">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:enabled="false"-->
+<!--                                    android:text="LNCT University"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="19sp" />-->
+
+
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="6dp"-->
+<!--                            app:cardPreventCornerOverlap="true"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:hint="Course"-->
+<!--                                app:shapeAppearance="@style/Rounded">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/editext_class"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:enabled="false"-->
+<!--                                    android:text="B.Tech in Computer Science &amp; Engineering"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="18sp" />-->
+
+
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="6dp"-->
+<!--                            app:cardPreventCornerOverlap="true"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:hint="Graduation Year"-->
+<!--                                app:shapeAppearance="@style/Rounded">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:enabled="false"-->
+<!--                                    android:text="2024"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="18sp" />-->
+
+
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="6dp"-->
+<!--                            app:cardPreventCornerOverlap="true"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:hintTextColor="@color/black"-->
+<!--                                android:hint="Bio"-->
+
+<!--                                app:boxStrokeColor="#1B8BF2"-->
+<!--                                app:shapeAppearance="@style/Rounded">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/addbio"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="This is going to be best in this world"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="19sp" />-->
+
+
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="6dp"-->
+<!--                            app:cardPreventCornerOverlap="true"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:hint="Add Github url"-->
+<!--                                app:hintTextColor="@color/black"-->
+<!--                                app:boxStrokeColor="#1B8BF2"-->
+<!--                                app:shapeAppearance="@style/Rounded">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/github_url"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    app:boxStrokeColor="#1B8BF2"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="19sp" />-->
+
+
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="6dp"-->
+<!--                            app:cardPreventCornerOverlap="true"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:boxStrokeColor="#1B8BF2"-->
+<!--                                app:hintTextColor="@color/black"-->
+<!--                                android:hint="LinkedIn Url"-->
+<!--                                app:shapeAppearance="@style/Rounded">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/linkedin_url"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="This is going to be best in this world"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="19sp" />-->
+
+
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+                        <!--        <com.google.android.material.textfield.TextInputLayout-->
+                        <!--            android:layout_width="match_parent"-->
+                        <!--            android:layout_height="wrap_content"-->
+                        <!--            >-->
+                        <!--            -->
+                        <!--            <com.google.android.material.textfield.TextInputEditText-->
+                        <!--                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"-->
+                        <!--                android:layout_width="match_parent"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                />-->
+                        <!--            -->
+                        <!--            -->
+                        <!--            -->
+                        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--            </ScrollView>-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat14">
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:adSize="BANNER"
+                    app:adUnitId="@string/banner_ad_unit_id" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/save_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.222">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/login_button_background"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Done"
+                    android:textColor="@color/white" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

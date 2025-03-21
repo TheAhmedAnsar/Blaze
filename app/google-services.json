@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "400904703418",
+    "firebase_url": "https://blaze-a383b-default-rtdb.firebaseio.com",
+    "project_id": "blaze-a383b",
+    "storage_bucket": "blaze-a383b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400904703418:android:577440c0f3c19e5acfe183",
+        "android_client_info": {
+          "package_name": "com.example.blaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400904703418-8gtfhfic2pgne5l1namrj6ake7j54uv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blaze",
+            "certificate_hash": "1cbaf86f9f49f6df510a01c69efd8d8beb5a9343"
+          }
+        },
+        {
+          "client_id": "400904703418-hj6m0dpoc3dlpujck00mp1vtgao0s0k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZEi4fMPMMA7T2yf5-j-ivrlG7HMxTZg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400904703418-hj6m0dpoc3dlpujck00mp1vtgao0s0k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

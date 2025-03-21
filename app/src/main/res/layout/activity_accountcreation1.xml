@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:id="@+id/linearLayoutCompat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/photo"
+            />
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bottom_cut"
+            android:gravity="center"
+            android:text="Register new Account"
+            android:textColor="@color/white"
+
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#42000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="or" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#42000000"
+
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/bottom_cut"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/white"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Let's Blaze"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:textColor="#5EC0F6"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    android:id="@+id/constraint"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    >-->
+
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressbar1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/scroll"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/scroll" />-->
+
+
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fillViewport="true"-->
+<!--        android:paddingBottom="50dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+
+<!--                android:id="@+id/linearLayoutCompat"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--                app:layout_constraintVertical_bias="0.03">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:fontFamily="@font/robotoregular"-->
+<!--                    android:text="Login"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="32sp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="12dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/layout"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:hintTextColor="@color/black"-->
+<!--                        android:hint="Phone number"-->
+<!--                        app:boxCornerRadiusTopEnd="8dp"-->
+<!--                        app:boxCornerRadiusTopStart="8dp"-->
+<!--                        app:boxCornerRadiusBottomEnd="8dp"-->
+<!--                        app:boxCornerRadiusBottomStart="8dp"-->
+<!--                        android:nextFocusDown="@id/this_one"-->
+<!--                        app:boxStrokeColor="#7c8ef2"-->
+<!--                        android:focusedByDefault="false"-->
+<!--                        app:boxStrokeWidth="1dp"-->
+
+<!--                        >-->
+
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/phone_numberagain"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:inputType="number"-->
+<!--                            android:fontFamily="@font/robotoregular"-->
+<!--                            android:imeOptions="actionNext"-->
+<!--                            android:maxLength="15"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="15sp" />-->
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/this_one"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        app:boxCornerRadiusTopEnd="8dp"-->
+<!--                        app:boxCornerRadiusTopStart="8dp"-->
+<!--                        app:boxCornerRadiusBottomEnd="8dp"-->
+<!--                        app:boxCornerRadiusBottomStart="8dp"-->
+<!--                        app:boxStrokeColor="#7c8ef2"-->
+<!--                        android:hint="Password"-->
+
+<!--                        app:hintTextColor="@color/black"-->
+<!--                        app:boxStrokeWidth="1dp">-->
+
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/passwordagain"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:fontFamily="@font/robotoregular"-->
+<!--                            android:inputType="textPassword"-->
+
+<!--                            android:textSize="15sp" />-->
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:id="@+id/linearLayoutCompat2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"-->
+<!--                app:layout_constraintVertical_bias="0.053">-->
+
+
+<!--                <TextView-->
+<!--android:layout_marginStart="20dp"-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/robotoregular"-->
+<!--                    android:text="Forget password ??"-->
+<!--                    android:textSize="13sp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--            &lt;!&ndash;            <androidx.appcompat.widget.AppCompatButton&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/log_in"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginStart="25dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginEnd="25dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/background_button_sign"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:fontFamily="@font/robotoregular"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="Sign in"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textColor="@color/black"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textStyle="bold"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintHorizontal_bias="0.498"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/textView"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintVertical_bias="0.1" />&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;            <androidx.appcompat.widget.LinearLayoutCompat&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:fontFamily="@font/robotoregular"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:text="Dont have an account yet?"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textSize="15sp" />&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;            </androidx.appcompat.widget.LinearLayoutCompat>&ndash;&gt;-->
+
+
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                >-->
+
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/Button"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_margin="15dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="SIGN In"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:background="@drawable/bottom_cut"-->
+<!--                    android:gravity="center"-->
+
+<!--                    />-->
+
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--    </ScrollView>-->
+
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:id="@+id/linearLayoutCompat10"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/scroll"-->
+<!--        app:layout_constraintVertical_bias="0.007">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/robotoregular"-->
+<!--            android:text="Dont have an account yet?"-->
+<!--            android:textColor="#B4000000"-->
+<!--            android:textSize="15sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/register_jump"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:fontFamily="@font/robotoregular"-->
+<!--            android:text="Sign up"-->
+<!--            android:textColor="#04A3FB"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--    &lt;!&ndash;    <androidx.appcompat.widget.LinearLayoutCompat&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/next_step_1"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="45dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:background="@drawable/bottom_cut"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintVertical_bias="1.0">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/robotoregular"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="SIGN IN"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18sp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginStart="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:tint="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/icons" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        &lt;!&ndash;dbeacb&ndash;&gt;&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    </androidx.appcompat.widget.LinearLayoutCompat>&ndash;&gt;-->
+
+
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

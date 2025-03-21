@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_history"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blaze your friends and it will show up here."
+            android:textSize="20sp"
+            android:alpha="0.8"
+     android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+            <include layout="@layout/shimmer_effect"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userList"
+android:visibility="gone"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_users"
+        android:orientation="vertical"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

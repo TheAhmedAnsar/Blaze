@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Blaze" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/appcolor</item>
+        <item name="colorPrimaryVariant">@color/appcolor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+    </style>
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined" parent="">
+        <item name="colorControlActivated">@color/appcolor</item>
+
+    </style>
+
+
+<!--    AlertDialogTheme-->
+    <style name="materialdesign" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:textColor">#5EC0F6</item>
+        <item name="android:textStyle">normal</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+
+        <item name="simpleItemSelectedRippleColor">@android:color/transparent</item>
+        <item name="backgroundColor">@android:color/transparent</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+
+        <item name="buttonBarPositiveButtonStyle">@style/Button</item>
+<!--        <item name="buttonBarNeutralButtonStyle">@style/Widget.App.Button</item>-->
+    </style>
+
+        <style name="Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+
+            <item name="rippleColor">@android:color/transparent</item>
+
+    </style>
+
+
+
+
+
+
+
+    <style name="circularImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- You can adjust the cornerSize to control the curvature -->
+    </style>
+
+
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <!-- Customize menu icon color -->
+        <item name="android:tint">@color/white</item>
+      <item name="android:gravity">center</item>
+    </style>
+
+
+
+
+
+    <style name="Changetheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize colorPrimary to change the ActionBar color -->
+        <item name="colorPrimary">#5EC0F6</item>
+        <!-- Other theme customizations can go here -->
+    </style>
+
+    <style name="Changethemee" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize colorPrimary to change the ActionBar color -->
+        <item name="colorPrimary">#5EC0F6</item>
+        <!-- Other theme customizations can go here -->
+    </style>
+
+
+
+
+</resources>
